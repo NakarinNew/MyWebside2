@@ -1,0 +1,29 @@
+@(products: Products)
+<html>
+    <head>
+        <title>
+            PRODUCT ORDER.
+        </title>
+    </head>
+    <body>
+        <h2 class="bg-warning text-dark">PRODUCT ORDER.</h2>
+        <table class="table table-dark">
+            <tr>
+                <th>ID :</th>
+                <td>@products.getId</td>
+            </tr>
+            <tr>
+                <th>Game Name :</th>
+                <td>@products.getName</td>
+            </tr>
+            <tr>
+                <th>Price :</th>
+                <td>@products.getPrice</td>
+            </tr>
+            <tr>
+                <th>Amount :</th>
+                <td>@products.getAmount</td>
+            </tr>
+        </table>
+    </body>
+</html>

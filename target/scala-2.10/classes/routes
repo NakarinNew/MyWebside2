@@ -1,0 +1,15 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                              controllers.Application.index()
+GET     /art                           controllers.Application.article()
+GET     /pro                           controllers.Application.promotion()
+GET     /show                          controllers.Application.show()
+
+GET     /products_form                 controllers.Application.products_form()
+POST    /product_post                  controllers.Application.product_post()
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)

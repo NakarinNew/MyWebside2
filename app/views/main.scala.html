@@ -1,0 +1,93 @@
+@(content:Html)
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet"
+        href="/assets/stylesheets/bootstrap/css/bootstrap.css">
+        <style>
+        body {
+                background-image: url("assets/images/backg.jpg");
+                background-size: cover;
+                background-attachment: fixed;
+            }
+        h1 {
+            text-shadow: 2px 2px 5px blue;
+        }
+        </style>
+    </head>
+<body>
+    <nav class="navbar navbar-inverse" style="background-color: #d1ecf1">
+            <div style="color:grey">
+                <h1>NXWX STEAM KEYS.</h1>
+                <p style="color:black" >จำหน่ายเกม Steam. ในรูปแบบ Digital Download</p>
+            </div>
+        <div class="navbar-header">
+            <a class="navbar-brand" href="https://store.steampowered.com/?l=thai" target="_blank">
+                <span class="glyphicon glyphicon-globe"></span> STEAM. Web site</a>
+        </div>
+    </nav>
+    <nav>
+        <center>@menu()</center>
+    </nav>
+
+    <div class="container" style="margin-top:30px">
+        <div class="row">
+            <div class="col-sm-3" style="background-color: #d1ecf1">
+               <div class="panel panel-success"style="background-color: white">
+                <h2>About Me</h2>
+                <div class="fakeimg"><center><img src="assets/images/icon.png"width="100"></center></div>
+                   Name : Nakarin Wadkhian <br>
+                   Nickname : New <br>
+                   Age : 21 year old<br>
+                   Birthday : August , 23 , 1997 <br>
+                   Student ID : 59342110142-1
+                <h3>Some Links</h3>
+                <p>Lorem ipsum dolor sit ame.</p>
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+                   <hr class="d-sm-none">
+               </div>
+            </div>
+            <div class="col-sm-9">
+            @content
+            </div>
+        </div>
+    </div>
+
+   <br> <div class="jumbotron text-center" style="margin-bottom:0">
+        <div class="row">
+            <div class="col-sm-4">
+                <h1>เกี่ยวกับเรา</h1>
+                จำหน่ายเกม Steam ในรูปแบบ <br>
+                Digital Download ลูกค้าสามารถสั่งซื้อได้ตลอด 24 ชม. <br>
+                เพียงเติมเงินเข้าบัญชีและสั่งซื้อ
+                (เพื่อการศึกษา)
+            </div>
+            <div class="col-sm-4">
+                <h1>LOCATION</h1>
+                ที่อยู่ : 222/1 หมู่15 หมู่บ้าน สุรินดา ถ.เจนจบทิศ <br>
+                ต.เมืองเก่า อ.เมือง จ.ขอนแก่น 40000
+            </div>
+            <div class="col-sm-4">
+                <h1>ติดต่อเรา</h1>
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="https://www.facebook.com/nakarin.new" target="_blank">
+                        <span class="glyphicon glyphicon-globe"></span> FACEBOOK.</a>
+                </div>
+            </div>
+
+        </div>
+        </div>
+</body>
+</html>
